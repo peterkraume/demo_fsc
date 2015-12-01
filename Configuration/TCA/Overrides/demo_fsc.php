@@ -8,14 +8,16 @@ if (!defined ('TYPO3_MODE')) {
 $_EXTKEY = $GLOBALS['_EXTKEY'] = 'demo_fsc';
 
 // Adds the content element to the "Type" dropdown
-ExtensionManagementUtility::addPlugin(
+ExtensionManagementUtility::addTcaSelectItem(
+		'tt_content',
+		'CType',
 		array(
 				'LLL:EXT:demo_fsc/Resources/Private/Language/Tca.xlf:demo_fsc',
 				$_EXTKEY,
-				ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/ContentElements/demo_fsc.svg'
+				'content-plugin'
 		),
-		'CType',
-		$_EXTKEY
+		'textmedia',
+		'after'
 );
 
 // Configure the default backend fields for the content element
