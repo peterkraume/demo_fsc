@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.common {
+	elements {
+		demo_fsc {
+			iconIdentifier = content-plugin
+			title = LLL:EXT:demo_fsc/Resources/Private/Language/Tca.xlf:demo_fsc
+			description = LLL:EXT:demo_fsc/Resources/Private/Language/Tca.xlf:demo_fsc.wizard.description
+			tt_content_defValues {
+				CType = demo_fsc
+			}
+		}
+	}
+	show := addToList(demo_fsc)
+}

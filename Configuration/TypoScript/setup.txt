@@ -1,0 +1,21 @@
+lib.fluidContent {
+	templateRootPaths {
+		50 = EXT:demo_fsc/Resources/Private/Templates
+	}
+}
+
+tt_content {
+	demo_fsc =< lib.fluidContent
+	demo_fsc {
+		templateName = DemoFsc.html
+
+		# If you want to do some data manipulation before sending everything to the view
+		dataProcessing {
+			1 = KWS\DemoFsc\DataProcessing\DemoFscProcessor
+			1 {
+				# You can send your own parameters to the processor as well
+				useHere = theConfigurationOfTheDataProcessor
+			}
+		}
+	}
+}
