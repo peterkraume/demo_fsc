@@ -2,6 +2,6 @@
 	"name": "kws/demo-fsc",
 	"description": "demo extension to show how to create your own Fluid Styled Content Element in TYPO3 7.6 LTS",
 	"require": {
-		"php": ">=5.5.0",
+		"php": ">=5.5.0"
 	}
 }
